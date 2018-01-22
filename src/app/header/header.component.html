@@ -1,32 +1,23 @@
-<header>
+<header> 
   <div class = 'container-fluid'>
     <div class = 'row'>
       <div class = 'col-md-12'>
-        <h1>{{logo}}</h1>
-     <nav id="menu-primary">
- 
-    <div class="menu-container">
- 
-        <div id="menu-toggle-primary">
-              
-            <a class="open-menu-primary" href="#menu-primary"><span><span class="glyphicon glyphicon-menu-hamburger" ></span></span></a>
-            <a class="close-menu-primary" href="#"><span class="glyphicon glyphicon-remove"></span></a>
-        </div><!— .menu-toggle —>
- 
-        <div class="wrap">
-            <ul class="menu-items" id="menu-primary-items">
-                <li class="menu-item"><a href="#">Контакти</a></li>
-                <li class="menu-item"><a href="#">Відеоспостереження</a></li>
-                <li class="menu-item"><a href="#">Про нас</a></li>
-               
-            </ul>
-        </div><!— .wrap —>
- 
-    </div><!— .menu-container —>
- 
-</nav>
-        <h2 class = 'text-center'>{{slogan}}</h2>
-
+      <div class = 'top-fixed navbar-fixed-top'>
+        <a href = '#' id = 'logo' class = 'col-md-1 animated flipInY' [@logoAnimate]><h1>{{logo}}</h1></a>
+        <a class="col-md-5 col-md-push-10 cross " href = '#' (click) = 'barsAnimate()' (click)= 'toggle()'>
+          <div class = 'bars'>
+            <div class="bar1" ></div>
+            <div class="bar2" ></div>
+            <div class="bar3" ></div>
+          </div>
+        <div class ='dropdown-list col-md-3 col-md-pull-1' *ngIf="state" [@fadeInOut]>
+          <a href ='#' class = 'first-list'>Fist</a>
+          <a href ='#' class = 'second-list'>Second</a>
+          <a href ='#' class = 'third-list'>Third</a>
+        </div>
+        </a>
+      </div>
+        <h2 class = ' col-md-1'>Слоган сасний доладний і прикольний </h2>
       </div>
     </div>
   </div>

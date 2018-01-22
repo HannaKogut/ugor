@@ -7,6 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { MainComponent } from './main/main.component';
 import { FooterComponent } from './footer/footer.component';
 import { Http } from '@angular/http';
+import { ClarityModule } from "clarity-angular";
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { Http } from '@angular/http';
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ClarityModule 
   ],
   providers: [Http],
   bootstrap: [AppComponent]

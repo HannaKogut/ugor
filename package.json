@@ -21,11 +21,18 @@
     "@angular/platform-browser": "^4.2.4",
     "@angular/platform-browser-dynamic": "^4.2.4",
     "@angular/router": "^4.2.4",
+    "@webcomponents/custom-elements": "^1.0.0",
+    "clarity-angular": "^0.10.23",
+    "clarity-icons": "^0.10.23",
+    "clarity-ui": "^0.10.23",
     "core-js": "^2.4.1",
+    "gsap": "^1.20.3",
     "ng2-loading-animate": "0.0.17",
+    "ng2-scrollreveal": "^1.0.1",
     "ng2-spin-kit-new": "^1.0.3",
     "ng4-loading-spinner": "^1.1.1",
     "rxjs": "^5.4.2",
+    "scrollreveal": "^3.3.6",
     "zone.js": "^0.8.14"
   },
   "devDependencies": {
